@@ -64,6 +64,6 @@ return [
     |
     */
 
-    's3_object_url_expires' => null
+    's3_object_url_expires' => null,
 
 ];
