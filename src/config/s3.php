@@ -50,4 +50,20 @@ return [
 
     'path' => ':attachment/:id/:style/:filename',
 
+    /*
+    |--------------------------------------------------------------------------
+    | S3 Object Expiration
+    |--------------------------------------------------------------------------
+    |
+    | An expiration string that will be used as default for all S3 objects
+    | This parameter is passed to the Aws\S3\S3Client::getObjectUrl()  when
+    | retrieving a file from S3.
+    | AWS Documentation for Aws\S3\S3Client::getObjectURL() at
+    | http://docs.aws.amazon.com/aws-sdk-php/latest/class-Aws.S3.S3Client.html#_getObjectUrl
+    | This is usually used in conjunction with a 'private' ACL object config
+    |
+    */
+
+    's3_object_url_expires' => null
+
 ];
